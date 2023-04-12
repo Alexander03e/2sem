@@ -1,0 +1,123 @@
+.h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.header__h1{
+    color:brown;
+}
+.main__h1{
+    font-size:larger;
+    margin-top:45px;
+    margin-bottom:45px;
+}
+.grid{
+    width:500px;
+    height:500px;
+    display:grid;
+    grid-template: 7% 38% 38% 11%/ 14% 40% 25% 15%;
+    grid-gap: 2%;
+    background-color:black;
+    
+    box-shadow:8px 7px 7px grey;
+}
+.grid__white-box{
+    background-color:white;
+}
+.grid__yellow-box{
+    background-color:yellow;
+}
+.grid__red-box{
+    background-color:red;
+    grid-area: 2/1/4/3;
+}
+.grid__black-box{
+    background-color:black;
+}
+.grid__white-box--1{
+    grid-column:1/3;
+}
+.grid__yellow-box--1{
+    grid-column:3/5;
+}
+.grid__yellow-box--2 {
+    grid-area:2/3/2/5;
+}
+
+.grid__white-box--2-1 {
+    grid-area: 3/3/4/4;
+}
+.grid__white-box--2-2 {
+    grid-area: 3/4/3/5;
+}
+
+.grid__white-box--3-1 {
+    grid-area: 4/2/5/3;
+}
+.grid__white-box--3-2 {
+    grid-area: 4/3/5/5;
+}
+/* РАБОТА Яна Чихольда */
+
+.paper{
+    display:grid;
+    width:500px;
+    height:400px;
+    grid-template: repeat(5,1fr) / repeat(7,1fr);
+    
+    background-color: #f7f7f7;
+}
+.paper__side{
+    background-color:#2d2d2d;
+    grid-column:1;
+    grid-row:1/6;
+}
+.paper__title{
+    grid-column:4/8;
+    grid-row:1/3;
+}
+.paper__img{
+    width:100%;
+    height:100%;
+}
+.menu{
+    list-style: none;
+    justify-content: space-between;
+}
+.item{
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    justify-content: space-between;
+}
+.dashboard{
+    display:grid;
+    width:600px;
+    height:800px;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns:repeat(6,1fr);
+    grid-template-areas: 
+        "nav graphic1 graphic1 graphic1 graphic1 graphic1 graphic1"
+        "nav graphic4 graphic4 graphic2 graphic2 graphic3 graphic3"
+        "nav graphic5 graphic5 graphic5 graphic5 graphic5 graphic5";
+}
+.nav{
+    grid-area:nav;
+    background-color:aqua;
+    
+}
+.dashboard__graphic1 {
+    grid-area: graphic1;
+}
+.dashboard__graphic2 {
+    grid-area: graphic2;
+}
+.dashboard__graphic3 {
+    grid-area: graphic3;
+}
+.dashboard__graphic4 {
+    grid-area: graphic4;
+}
+.dashboard__graphic5 {
+    grid-area: graphic5;
+}
